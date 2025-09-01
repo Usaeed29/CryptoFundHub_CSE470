@@ -1,0 +1,3 @@
+[submodule "cryptofundhub/crypto_fund_hub/lib/forge-std"]
+	path = cryptofundhub/crypto_fund_hub/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std.git
