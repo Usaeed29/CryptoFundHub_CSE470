@@ -36,7 +36,7 @@ contract CrowdfundingFactory {
         string memory _description,
         uint256 _goal,
         uint256 _durationInDays
-    ) external notPaused {
+    ) external notPaused returns (address) {
         Crowdfunding newCampaign = new Crowdfunding(
             msg.sender,
             _name,
@@ -55,6 +55,8 @@ contract CrowdfundingFactory {
 
         campaigns.push(campaign);
         userCampaigns[msg.sender].push(campaign);
+
+        return campaignAddress;
     }
 
     function getUserCampaigns(address _user) external view returns (Campaign[] memory) {
