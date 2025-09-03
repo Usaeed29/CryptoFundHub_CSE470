@@ -90,6 +90,7 @@ export default function CampaignPage() {
       });
     
     return (
+        
         <div className="mx-auto max-w-7xl px-2 mt-4 sm:px-6 lg:px-8">
             <div className="flex flex-row justify-between items-center">
                 {!isLoadingName && (

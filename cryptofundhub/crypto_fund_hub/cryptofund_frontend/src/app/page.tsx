@@ -5,6 +5,8 @@ import { sepolia } from "thirdweb/chains";
 import { getContract } from "thirdweb";
 import { CampaignCard } from "@/components/CampaignCard";
 import { CROWDFUNDING_FACTORY } from "./constants/contracts";
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   // Get CrowdfundingFactory contract
@@ -14,6 +16,8 @@ export default function Home() {
     address: CROWDFUNDING_FACTORY,
   });
 
+
+
   // Get all campaigns deployed with CrowdfundingFactory
   const {data: campaigns, isLoading: isLoadingCampaigns, refetch: refetchCampaigns } = useReadContract({
     contract: contract,
@@ -22,10 +26,15 @@ export default function Home() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-4 mt-4 sm:px-6 lg:px-8">
+    <main>
+    {/* Hero Section */}
+      <Hero />
+
+    
+    <section className="mx-auto max-w-7xl px-4 mt-4 sm:px-6 lg:px-8 mb-10">
       <div className="py-10">
-        <h1 className="text-4xl font-bold mb-4">Campaigns:</h1>
-        <div className="grid grid-cols-3 gap-4">
+        <h1 className="text-4xl font-bold mb-20">Active Campaigns:</h1>
+        <div className="grid grid-cols-3 gap-20">
           {!isLoadingCampaigns && campaigns && (
             campaigns.length > 0 ? (
               campaigns.map((campaign) => (
@@ -40,6 +49,11 @@ export default function Home() {
           )}
         </div>
       </div>
+    </section>
+    {/* Footer */}
+      <Footer />
+
+
     </main>
   );
 }
