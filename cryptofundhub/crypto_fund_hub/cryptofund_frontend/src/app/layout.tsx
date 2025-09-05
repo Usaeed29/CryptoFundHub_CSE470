@@ -8,9 +8,9 @@ import Hero from "@/components/Hero";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "thirdweb SDK + Next starter",
+  title: "CryptoFundHub",
   description:
-    "Starter template for using thirdweb SDK with Next.js App router",
+    "Decentralized Crowdfunding Platform",
 };
 
 export default function RootLayout({
