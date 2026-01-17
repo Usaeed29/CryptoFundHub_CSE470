@@ -1,9 +1,10 @@
 ## 🎬 Project Demo
 
-<video width="600" controls>
-  <source src="demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/user-attachments/assets/bebaf11d-733b-42fb-89f2-b0d71444e922
+
+
+
 
 ---
 
