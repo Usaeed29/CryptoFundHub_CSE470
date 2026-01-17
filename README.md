@@ -120,10 +120,6 @@ The frontend abstracts complex blockchain interactions into a simple, user-frien
 - Thirdweb SDK (React, Deploy, Contract Calls)
 - MetaMask
 
-### Development Tools
-- Foundry (Forge)
-- Hardhat (optional)
-- Git & GitHub
 
 ---
 
@@ -137,14 +133,3 @@ The frontend abstracts complex blockchain interactions into a simple, user-frien
 ```bash
 npm install
 
-### 📈 Future Enhancements
-
-- ERC20-based funding
-
-- NFT or tokenized reward tiers
-
-- Campaign analytics dashboard
-
-- Multi-chain deployment
-
-- Donor history and profile pages
